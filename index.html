@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AD Pendotiba | Matriz</title>
+  <meta name="description" content="Assembleia de Deus em Pendotiba — Matriz. Transformando Vidas pela Palavra. Largo da Batalha, Niterói." />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="nav-brand" href="#inicio" aria-label="AD Pendotiba Matriz">
+      <img src="assets/marca-horizontal.png" alt="AD Pendotiba Matriz" />
+    </a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#cultos">Cultos</a>
+      <a href="#chegar">Como chegar</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <img class="hero-mark" src="assets/marca-matriz.png" alt="AD Pendotiba Matriz" />
+        <p class="lema">Transformando Vidas pela Palavra.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#cultos">Horários</a>
+          <a class="btn btn-ghost" href="#chegar">Como chegar</a>
+        </div>
+      </div>
+    </section>
+    <section class="intro">
+      <p class="kicker">Seja bem-vindo</p>
+      <h1>Uma casa para pertencer.</h1>
+      <p class="lead">A AD Pendotiba Matriz está no Largo da Batalha, em Niterói. Venha cultuar conosco.</p>
+    </section>
+    <section class="section" id="cultos">
+      <div class="section-head">
+        <p class="kicker">Cultos</p>
+        <h2>Horários da Matriz</h2>
+      </div>
+      <div class="schedule" role="list">
+        <article class="day" data-day="0" role="listitem"><h3>Domingo</h3><p>09:00–11:30</p><p>19:00–21:00</p></article>
+        <article class="day" data-day="1" role="listitem"><h3>Segunda</h3><p>09:00–11:00</p><p>18:00–22:00</p></article>
+        <article class="day" data-day="2" role="listitem"><h3>Terça</h3><p>19:00–21:30</p></article>
+        <article class="day" data-day="3" role="listitem"><h3>Quarta</h3><p>14:00–17:00</p></article>
+        <article class="day" data-day="4" role="listitem"><h3>Quinta</h3><p>08:00–11:00</p><p>19:00–21:30</p></article>
+        <article class="day" data-day="5" role="listitem"><h3>Sexta</h3><p>09:00–11:00</p></article>
+        <article class="day" data-day="6" role="listitem"><h3>Sábado</h3><p>07:30–11:30</p></article>
+      </div>
+    </section>
+    <section class="section section-alt" id="chegar">
+      <div class="split">
+        <div>
+          <p class="kicker">Visite-nos</p>
+          <h2>Como chegar</h2>
+          <p class="address">R. Manduca de Oliveira, 8<br />Largo da Batalha, Niterói — RJ<br />24315-340</p>
+          <a class="btn btn-gold" href="https://share.google/NRfVZaPv0sDVc428N" target="_blank" rel="noopener">Abrir no Maps</a>
+        </div>
+        <div class="map-wrap">
+          <iframe title="Mapa da AD Pendotiba Matriz" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Rua%20Manduca%20de%20Oliveira%208%20Largo%20da%20Batalha%20Niteroi%20RJ%2024315-340&hl=pt-BR&z=17&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contato">
+      <div class="section-head">
+        <p class="kicker">Acompanhe</p>
+        <h2>Redes oficiais</h2>
+      </div>
+      <div class="socials">
+        <a class="social" href="https://www.instagram.com/adpendotiba/" target="_blank" rel="noopener"><span>Instagram</span><em>@adpendotiba</em></a>
+        <a class="social" href="https://www.youtube.com/c/ADPendotiba" target="_blank" rel="noopener"><span>YouTube</span><em>AD Pendotiba</em></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <img src="assets/pomba-branca.png" alt="" />
+    <p>AD Pendotiba — Matriz</p>
+    <p class="muted">Transformando Vidas pela Palavra.</p>
+  </footer>
+  <script>document.querySelectorAll('.day').forEach(el=>{if(Number(el.dataset.day)===new Date().getDay())el.classList.add('is-today')});</script>
+</body>
+</html>
